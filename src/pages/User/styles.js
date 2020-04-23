@@ -1,6 +1,12 @@
 import styled from 'styled-components/native';
 import { RectButton } from 'react-native-gesture-handler';
 
+export const List = styled.FlatList`
+  height: 50px;
+  width: 100%;
+  background: #000;
+`;
+
 export const Profile = styled.View`
   background: #000;
   margin: 20px 20px 30px;
@@ -36,4 +42,34 @@ export const ProfileButton = styled(RectButton)`
 export const ProfileButtonText = styled.Text`
   color: #fff;
   font-size: 16px;
+`;
+
+/*
+
+*/
+export const OwnerProfile = styled.View`
+  background: #999;
+  flex-direction: row;
+  border-radius: 5px;
+  margin: 20px 20px 30px;
+  padding: 10px 0;
+  justify-content: space-around;
+  align-items: center;
+`;
+export const OwnerName = styled.Text`
+  color: #fff;
+  font-size: 16px;
+`;
+export const OwnerAvatar = styled.Image`
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+  margin: 10px 10px 10px 5px;
+`;
+
+export const Stars = styled.Text`
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  margin: 10px 0;
 `;
